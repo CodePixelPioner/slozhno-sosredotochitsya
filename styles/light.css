@@ -9,9 +9,61 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #FF8DCB;
+  --dark-color: #353430;
+  --light-color: #FFC2E6;  
+  --accent-title-color: #FFC2E6;
+  --shadow-title-color: #FF0070;
 
+  --menu-hover-border: rgba(50, 49, 45, 0.40);
+  --main-font: 'IBM Plex mono', sans-serif;
+  --menu-color: var(--dark-color);
+  --accent-text: var(--dark-color);
+  --content-text: var(--dark-color);
+  --bg-text: var(--accent-color);
+  --link-color: var(--accent-color);
+  --text-color: var(--dark-color);
+  --bg-color: #FFF1F7;
+  --bg-img: url("../images/cover-image-light.png");
 }
 
 
+:root.theme_light {
+  --accent-color: #FF8DCB;
+  --dark-color: #353430;
+  --light-color: #FFC2E6;
+  --accent-title-color: #FFC2E6;
+  --shadow-title-color: #FF0070;
 
+  --menu-hover-border: rgba(50, 49, 45, 0.40);
+  --main-font: 'IBM Plex mono', sans-serif;
+  --menu-color: var(--dark-color);
+  --accent-text: var(--dark-color);
+  --content-text: var(--dark-color);
+  --bg-text: var(--accent-color);
+  --link-color: var(--accent-color);
+  --text-color: var(--dark-color);
+  --bg-color: #FFF1F7;
+  --bg-img: url("../images/cover-image-light.png");
+}
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --dark-color: #353430;
+    --light-color: #FFC2E6;
+    --accent-title-color: #FFC2E6;
+    --shadow-title-color: #FF0070;
+  
+    --menu-hover-border: rgba(50, 49, 45, 0.40);
+    --main-font: 'IBM Plex mono', sans-serif;
+    --menu-color: var(--dark-color);
+    --accent-text: var(--dark-color);
+    --content-text: var(--dark-color);
+    --bg-text: var(--accent-color);
+    --link-color: var(--accent-color);
+    --text-color: var(--dark-color);
+    --bg-color: #FFF1F7;
+    --bg-img: url("../images/cover-image-light.png");   
+    }
+}
