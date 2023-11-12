@@ -198,7 +198,7 @@
 }
 
 .section__link {
-  text-shadow: 2px 2px 0px var(--shadow-title-color);
+  text-shadow: 2px 2px 0px var(--link-color);
   text-decoration: none;
 }
 
@@ -254,6 +254,7 @@
     "tape books ice"
     "tape street street";
   gap: 20px;
+  padding-block-end: 60px;
 }
 
 .picturs {
@@ -282,6 +283,21 @@
 
 .image-street {
   grid-area: street;
+}
+
+.footer {
+  position: relative;
+  block-size: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.footer-title {
+  display: flex;
+  text-shadow: 2px 2px 0px var(--shadow-title-color);
+  position: relative;
 }
 
 @media (width < 1024px) {
@@ -363,6 +379,9 @@
   }
   .section-gallery {
     gap: 10px;
+  }
+  .section-gallery-collection {
+    padding-block-end: 0;
   }
 }
 
