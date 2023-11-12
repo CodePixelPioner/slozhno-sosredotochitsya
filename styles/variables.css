@@ -10,9 +10,12 @@
   --light-color: #F1B2CE;
   --accent-title-color: #DB00FF;
   --shadow-title-color: #FF0070;
+  --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --size-column: clamp(236px, calc(100vw / 3.3), 315px) 2fr;
+  --rec-visibility: visible;
 
   --menu-hover-border: rgba(255, 0, 112, 0.40);
-  --main-font: 'IBM Plex mono', sans-serif;
+  --main-font: 'IBM Plex mono', monospace;
   --menu-color: var(--accent-color);
   --accent-text: var(--accent-color);
   --content-text: var(--light-color);
