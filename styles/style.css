@@ -375,13 +375,11 @@
   .section-gallery-collection {
     display: flex;
     flex-direction: column;
+    padding-block-end: 0;
     gap: 10px;
   }
   .section-gallery {
     gap: 10px;
-  }
-  .section-gallery-collection {
-    padding-block-end: 0;
   }
 }
 
