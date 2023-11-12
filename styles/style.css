@@ -42,7 +42,6 @@
   font-family: var(--main-font);
   background-color: var(--bg-text);
   font-size: 18px;
-  font-weight: 700;
   line-height: 23.4px;
   block-size: auto;
 }
@@ -51,6 +50,7 @@
   inline-size: clamp(355px, calc(100%/2), 491px);
   justify-self: end;
   display: inline-block;
+  font-weight: 700;
 }
 
 .header__content {
@@ -185,19 +185,18 @@
 
 .section-first {
   display: grid;
-  grid-template-columns: clamp(236px, calc(100vw / 3.25), 315px) 2fr;
+  grid-template-columns: clamp(236px, calc(100vw / 3.3), 315px) 2fr;
   grid-template-rows: 1fr auto;
-}
-
-.column {
   grid-auto-flow: row;
   column-gap: 20px;
 }
+
 
 .section__column-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-inline-start: 5px;
 }
 
 .section__group {
@@ -222,6 +221,35 @@
   border: 1px solid currentColor;
 }
 
+.section-second {
+  display: grid;
+  grid-template-columns: clamp(236px, calc(100vw / 3.3), 315px) 2fr;
+  grid-template-rows: 1fr auto;
+  grid-auto-flow: column;
+  row-gap: 20px;
+}
+
+.section__row-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: span 2;
+}
+
+.section__title {
+  margin-block-end: 10px;
+}
+
+.section__weight {
+  font-weight: 700;
+}
+
+.section__double-title {
+  font-weight: 400;
+}
+
+
+
 @media (width < 1024px) {
   .header__theme-menu {
     justify-self: end;
@@ -234,8 +262,14 @@
   .header-title {
     inset-inline-start: -3vw;
   }
+  .section__row-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__column-list {
+    padding-inline-start: 0;
 }
-
+}
 
 @media (width < 768px) {
   .header {
@@ -270,17 +304,21 @@
     inset-block-start: 11px;
   }
 
-.section-first {
-  display: flex;
-  flex-direction: column;
-}
+  .section-first {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-.column {
-  gap: 20px;
-}
+  .section-second {
+      display: flex;
+      flex-direction: column;
+      grid-auto-flow: column;
+      gap: 20px;
+  }
 
   .main {
-    gap: 50;
+    gap: 50px;
     padding: 40px 10px;
   }
 }
